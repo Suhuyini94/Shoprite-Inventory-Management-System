@@ -40,7 +40,7 @@ namespace ShopriteMgtSys
 
                 textBox1.Text = ""; textBox2.Text = ""; textBox3.Text = "";
                 textBox4.Text = ""; textBox5.Text = ""; textBox6.Text = "";
-                display();
+                display_users();
 
                 scmd1.ExecuteNonQuery();
 
@@ -61,14 +61,14 @@ namespace ShopriteMgtSys
                 conn.Close();
             }
             conn.Open();
-            display();
+            display_users();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
-        public void display()
+        public void display_users()
         {
             SqlCommand scmd = conn.CreateCommand();
             scmd.CommandType = CommandType.Text;
@@ -89,7 +89,7 @@ namespace ShopriteMgtSys
             scmd.CommandText = "delete from registration where id= "+ id +"";
             scmd.ExecuteNonQuery();
 
-            display();
+            display_users();
         }
     }
 }

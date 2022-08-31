@@ -35,6 +35,10 @@
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addUnitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -43,7 +47,9 @@
             // 
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.userToolStripMenuItem});
+            this.userToolStripMenuItem,
+            this.unitsToolStripMenuItem,
+            this.productsToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(843, 28);
@@ -83,6 +89,36 @@
             this.addUserToolStripMenuItem.Text = "Add User";
             this.addUserToolStripMenuItem.Click += new System.EventHandler(this.addUserToolStripMenuItem_Click);
             // 
+            // unitsToolStripMenuItem
+            // 
+            this.unitsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addUnitToolStripMenuItem});
+            this.unitsToolStripMenuItem.Name = "unitsToolStripMenuItem";
+            this.unitsToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
+            this.unitsToolStripMenuItem.Text = "Units";
+            // 
+            // addUnitToolStripMenuItem
+            // 
+            this.addUnitToolStripMenuItem.Name = "addUnitToolStripMenuItem";
+            this.addUnitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addUnitToolStripMenuItem.Text = "Add Unit";
+            this.addUnitToolStripMenuItem.Click += new System.EventHandler(this.addUnitToolStripMenuItem_Click);
+            // 
+            // productsToolStripMenuItem
+            // 
+            this.productsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addProductToolStripMenuItem});
+            this.productsToolStripMenuItem.Name = "productsToolStripMenuItem";
+            this.productsToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
+            this.productsToolStripMenuItem.Text = "Products";
+            // 
+            // addProductToolStripMenuItem
+            // 
+            this.addProductToolStripMenuItem.Name = "addProductToolStripMenuItem";
+            this.addProductToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addProductToolStripMenuItem.Text = "Add Product";
+            this.addProductToolStripMenuItem.Click += new System.EventHandler(this.addProductToolStripMenuItem_Click);
+            // 
             // MDIParent1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -113,6 +149,10 @@
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem unitsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addUnitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem productsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addProductToolStripMenuItem;
     }
 }
 

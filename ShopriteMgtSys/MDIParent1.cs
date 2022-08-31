@@ -109,5 +109,17 @@ namespace ShopriteMgtSys
             add_user au = new add_user();
             au.Show();
         }
+
+        private void addUnitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Unit un = new Unit();
+            un.Show();
+        }
+
+        private void addProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            add_product ap  = new add_product();
+            ap.Show();
+        }
     }
 }
