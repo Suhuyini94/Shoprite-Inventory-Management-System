@@ -121,5 +121,11 @@ namespace ShopriteMgtSys
             add_product ap  = new add_product();
             ap.Show();
         }
+
+        private void attendantInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Attendants att = new Attendants();
+            att.Show();
+        }
     }
 }
