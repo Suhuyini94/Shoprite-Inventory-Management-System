@@ -74,16 +74,25 @@
       <DependentUpon>add_user.cs</DependentUpon>
     </Compile>
     <Compile Include="Attendants.cs">
+<<<<<<< HEAD
+=======
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Attendants.Designer.cs">
       <DependentUpon>Attendants.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
+>>>>>>> dde4b11353f7349aeaffad2e243b83a7d187ff6c
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Attendants.Designer.cs">
+      <DependentUpon>Attendants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
     </Compile>
     <Compile Include="MDIParent1.cs">
       <SubType>Form</SubType>
@@ -93,6 +102,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchase.Designer.cs">
+      <DependentUpon>purchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sales.Designer.cs">
+      <DependentUpon>sales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Unit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,8 +129,13 @@
     <EmbeddedResource Include="Attendants.resx">
       <DependentUpon>Attendants.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+=======
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+>>>>>>> dde4b11353f7349aeaffad2e243b83a7d187ff6c
     </EmbeddedResource>
     <EmbeddedResource Include="MDIParent1.resx">
       <DependentUpon>MDIParent1.cs</DependentUpon>
@@ -123,6 +149,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="purchase.resx">
+      <DependentUpon>purchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sales.resx">
+      <DependentUpon>sales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Unit.resx">
       <DependentUpon>Unit.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +173,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\lock-icon.png" />
+    <Content Include="Images\ShopRite_Logo.png" />
     <Content Include="inventory.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

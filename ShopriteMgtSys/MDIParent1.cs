@@ -127,5 +127,14 @@ namespace ShopriteMgtSys
             Attendants att = new Attendants();
             att.Show();
         }
+<<<<<<< HEAD
+
+        private void purchaseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            purchase pur = new purchase();
+            pur.Show();
+        }
+=======
+>>>>>>> dde4b11353f7349aeaffad2e243b83a7d187ff6c
     }
 }
