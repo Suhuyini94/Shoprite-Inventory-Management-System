@@ -16,7 +16,7 @@ namespace ShopriteMgtSys
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run( new sales());
+            Application.Run( new login());
         }
     }
 }

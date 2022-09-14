@@ -36,7 +36,8 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>0</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,8 +49,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -74,19 +81,44 @@
       <DependentUpon>add_user.cs</DependentUpon>
     </Compile>
     <Compile Include="Attendants.cs">
-<<<<<<< HEAD
-=======
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Attendants.Designer.cs">
       <DependentUpon>Attendants.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
->>>>>>> dde4b11353f7349aeaffad2e243b83a7d187ff6c
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="generate_bill.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Attendants.Designer.cs">
-      <DependentUpon>Attendants.cs</DependentUpon>
+    <Compile Include="generate_bill.Designer.cs">
+      <DependentUpon>generate_bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="generate_purchase_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generate_purchase_report.Designer.cs">
+      <DependentUpon>generate_purchase_report.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -108,6 +140,12 @@
     <Compile Include="purchase.Designer.cs">
       <DependentUpon>purchase.cs</DependentUpon>
     </Compile>
+    <Compile Include="purchase_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchase_report.Designer.cs">
+      <DependentUpon>purchase_report.cs</DependentUpon>
+    </Compile>
     <Compile Include="sales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,14 +166,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Attendants.resx">
       <DependentUpon>Attendants.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-<<<<<<< HEAD
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generate_bill.resx">
+      <DependentUpon>generate_bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generate_purchase_report.resx">
+      <DependentUpon>generate_purchase_report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
-=======
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
->>>>>>> dde4b11353f7349aeaffad2e243b83a7d187ff6c
     </EmbeddedResource>
     <EmbeddedResource Include="MDIParent1.resx">
       <DependentUpon>MDIParent1.cs</DependentUpon>
@@ -152,12 +200,37 @@
     <EmbeddedResource Include="purchase.resx">
       <DependentUpon>purchase.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="purchase_report.resx">
+      <DependentUpon>purchase_report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="sales.resx">
       <DependentUpon>sales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Unit.resx">
       <DependentUpon>Unit.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -169,10 +242,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Images\lock-icon.png" />
+    <Content Include="Images\icon1.ico.jpg" />
+    <Content Include="Images\images.png" />
+    <Content Include="Images\pic1.png" />
     <Content Include="Images\ShopRite_Logo.png" />
     <Content Include="inventory.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -193,6 +265,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

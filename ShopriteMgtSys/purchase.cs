@@ -56,14 +56,14 @@ namespace ShopriteMgtSys
         {
             SqlCommand scmd = conn.CreateCommand();
             scmd.CommandType = CommandType.Text;
-            scmd.CommandText = "select * from attendant";
+            scmd.CommandText = "select * from supplier";
             scmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter sda = new SqlDataAdapter(scmd);
             sda.Fill(dt);
             foreach (DataRow dr in dt.Rows)
             {
-                comboBox2.Items.Add(dr["attendant_name"].ToString());
+                comboBox2.Items.Add(dr["supplier_name"].ToString());
             }
         }
         private void purchase_Load(object sender, EventArgs e)
@@ -120,7 +120,9 @@ namespace ShopriteMgtSys
                 scmd5.CommandText = "update stock set product_qty=product_qty + " + textBox1.Text +" where product_name='"+comboBox1.Text+"' ";
                 scmd5.ExecuteNonQuery();
             }
-
+            textBox1.Text = ""; textBox2.Text = ""; textBox3.Text = ""; textBox4.Text = "";
+            comboBox1.Text = "";    comboBox2.Text = "";    comboBox3.Text = "";
+            dateTimePicker1.Text = "";    dateTimePicker2.Text = "";
 
 
             MessageBox.Show("Purchase recorded successfully");

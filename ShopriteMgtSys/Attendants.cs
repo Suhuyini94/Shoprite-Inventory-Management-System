@@ -23,14 +23,14 @@ namespace ShopriteMgtSys
         {
             SqlCommand scmd = conn.CreateCommand();
             scmd.CommandType = CommandType.Text;
-            scmd.CommandText = "insert into attendant values('"+textBox1.Text+"','"+textBox2.Text+"','"+textBox3.Text+"','"+textBox4.Text+"')";
+            scmd.CommandText = "insert into supplier values('"+textBox1.Text+"','"+textBox2.Text+"','"+textBox3.Text+"','"+textBox4.Text+"')";
             scmd.ExecuteNonQuery();
 
             textBox1.Text = ""; textBox2.Text = "";
             textBox3.Text = ""; textBox4.Text = "";
 
             data_grid();
-            MessageBox.Show("Attendant added successfully");
+            MessageBox.Show("Supplier added successfully");
         }
 
         private void Attendants_Load(object sender, EventArgs e)
@@ -41,13 +41,14 @@ namespace ShopriteMgtSys
             }
             conn.Open();
             data_grid();
+            panel2.Visible = false;
         }
 
         public void data_grid()
         {
             SqlCommand scmd = conn.CreateCommand();
             scmd.CommandType = CommandType.Text;
-            scmd.CommandText = "select * from attendant ";
+            scmd.CommandText = "select * from supplier";
             scmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter sda = new SqlDataAdapter(scmd);
@@ -67,7 +68,7 @@ namespace ShopriteMgtSys
             apdt = Convert.ToInt32(dataGridView1.SelectedCells[0].Value.ToString());
             SqlCommand scmd = conn.CreateCommand();
             scmd.CommandType = CommandType.Text;
-            scmd.CommandText = "select * from attendant where id="+apdt+"";
+            scmd.CommandText = "select * from supplier where id=" + apdt+"";
             scmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter sda = new SqlDataAdapter(scmd);
@@ -75,7 +76,7 @@ namespace ShopriteMgtSys
             
             foreach(DataRow dr in dt.Rows)
             {
-                textBox5.Text = dr["attendant_name"].ToString();
+                textBox5.Text = dr["supplier_name"].ToString();
                 textBox6.Text = dr["contact"].ToString();
                 textBox7.Text = dr["address"].ToString();
                 textBox8.Text = dr["city"].ToString();
@@ -89,7 +90,7 @@ namespace ShopriteMgtSys
             del = Convert.ToInt32(dataGridView1.SelectedCells[0].Value.ToString());
             SqlCommand scmd = conn.CreateCommand();
             scmd.CommandType = CommandType.Text;
-            scmd.CommandText = "delete from attendant where id="+del+"";
+            scmd.CommandText = "delete from supplier where id=" + del+"";
             scmd.ExecuteNonQuery();
 
             data_grid();
@@ -101,7 +102,7 @@ namespace ShopriteMgtSys
             apdt = Convert.ToInt32(dataGridView1.SelectedCells[0].Value.ToString());
             SqlCommand scmd = conn.CreateCommand();
             scmd.CommandType = CommandType.Text;
-            scmd.CommandText = "update attendant set attendant_name='"+textBox5.Text+"', contact='"+textBox6.Text+"', address='"+textBox7.Text+"', city='"+textBox8.Text+"' where id=" + apdt + "";
+            scmd.CommandText = "update supplier set supplier_name='" + textBox5.Text+"', contact='"+textBox6.Text+"', address='"+textBox7.Text+"', city='"+textBox8.Text+"' where id=" + apdt + "";
             scmd.ExecuteNonQuery();
 
             panel2.Visible = false;

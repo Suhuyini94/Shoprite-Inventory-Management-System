@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(add_product));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-<<<<<<< HEAD
+
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,15 +43,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-=======
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
->>>>>>> dde4b11353f7349aeaffad2e243b83a7d187ff6c
+
+            
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -71,7 +64,6 @@
             // 
             // button1
             // 
-<<<<<<< HEAD
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(927, 19);
@@ -98,7 +90,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(238, 30);
             this.textBox1.TabIndex = 2;
-=======
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 35);
@@ -106,7 +97,6 @@
             this.label1.Size = new System.Drawing.Size(125, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Product Name";
->>>>>>> dde4b11353f7349aeaffad2e243b83a7d187ff6c
             // 
             // label2
             // 
@@ -120,7 +110,6 @@
             // 
             // label1
             // 
-<<<<<<< HEAD
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 35);
@@ -128,17 +117,15 @@
             this.label1.Size = new System.Drawing.Size(125, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Product Name";
-=======
+
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(177, 32);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(238, 30);
             this.textBox1.TabIndex = 2;
->>>>>>> dde4b11353f7349aeaffad2e243b83a7d187ff6c
             // 
             // dataGridView1
             // 
-<<<<<<< HEAD
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(497, 148);
             this.dataGridView1.Name = "dataGridView1";
@@ -149,19 +136,16 @@
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-=======
+
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(608, 32);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(189, 31);
             this.comboBox1.TabIndex = 3;
->>>>>>> dde4b11353f7349aeaffad2e243b83a7d187ff6c
             // 
             // panel2
             // 
-<<<<<<< HEAD
-=======
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(927, 19);
@@ -187,7 +171,6 @@
             // 
             // panel2
             // 
->>>>>>> dde4b11353f7349aeaffad2e243b83a7d187ff6c
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.comboBox2);
             this.panel2.Controls.Add(this.textBox2);
@@ -199,7 +182,6 @@
             this.panel2.TabIndex = 2;
             this.panel2.Visible = false;
             // 
-<<<<<<< HEAD
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Highlight;
@@ -212,8 +194,6 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-=======
->>>>>>> dde4b11353f7349aeaffad2e243b83a7d187ff6c
             // comboBox2
             // 
             this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -231,8 +211,6 @@
             this.textBox2.Size = new System.Drawing.Size(230, 30);
             this.textBox2.TabIndex = 7;
             // 
-<<<<<<< HEAD
-=======
             // label3
             // 
             this.label3.AutoSize = true;
@@ -243,7 +221,6 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Select Unit";
             // 
->>>>>>> dde4b11353f7349aeaffad2e243b83a7d187ff6c
             // label4
             // 
             this.label4.AutoSize = true;
@@ -254,7 +231,6 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Product Name";
             // 
-<<<<<<< HEAD
             // label3
             // 
             this.label3.AutoSize = true;
@@ -264,7 +240,6 @@
             this.label3.Size = new System.Drawing.Size(97, 23);
             this.label3.TabIndex = 6;
             this.label3.Text = "Select Unit";
-=======
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Highlight;
@@ -276,7 +251,6 @@
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
->>>>>>> dde4b11353f7349aeaffad2e243b83a7d187ff6c
             // 
             // add_product
             // 

@@ -12,8 +12,7 @@ namespace ShopriteMgtSys
 {
     public partial class MDIParent1 : Form
     {
-        private int childFormNumber = 0;
-
+        
         public MDIParent1()
         {
             InitializeComponent();
@@ -23,7 +22,6 @@ namespace ShopriteMgtSys
         {
             Form childForm = new Form();
             childForm.MdiParent = this;
-            childForm.Text = "Window " + childFormNumber++;
             childForm.Show();
         }
 
@@ -124,17 +122,32 @@ namespace ShopriteMgtSys
 
         private void attendantInfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             Attendants att = new Attendants();
             att.Show();
         }
-<<<<<<< HEAD
 
         private void purchaseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             purchase pur = new purchase();
             pur.Show();
         }
-=======
->>>>>>> dde4b11353f7349aeaffad2e243b83a7d187ff6c
+
+        private void MDIParent1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void salesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            sales ss = new sales();
+            ss.Show();
+        }
+
+        private void purchaseReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            purchase_report pr = new purchase_report();
+            pr.Show();
+        }
     }
 }
